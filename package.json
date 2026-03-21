@@ -15,7 +15,7 @@
   "scripts": {
     "dev": "npx http-server -p 8080 -o",
     "build": "echo 'Static site - no build needed'",
-    "deploy": "echo 'Deploy via Cloudflare Pages - push to GitHub'"
+    "deploy": "echo 'Static site deployed to Cloudflare Pages'"
   },
   "repository": {
     "type": "git",
