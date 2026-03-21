@@ -1,0 +1,28 @@
+{
+  "name": "wb1-website",
+  "version": "1.0.0",
+  "description": "Professional website for WB1 - Lead Generation & Digital Presence Agency",
+  "type": "module",
+  "keywords": [
+    "landing-page",
+    "digital-agency",
+    "lead-generation",
+    "responsive-design",
+    "web-presence"
+  ],
+  "author": "WB1",
+  "license": "PROPRIETARY",
+  "scripts": {
+    "dev": "npx http-server -p 8080 -o",
+    "build": "echo 'Static site - no build needed'",
+    "deploy": "echo 'Deploy via Cloudflare Pages - push to GitHub'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/YOUR_USERNAME/wb1-website.git"
+  },
+  "bugs": {
+    "url": "https://github.com/YOUR_USERNAME/wb1-website/issues"
+  },
+  "homepage": "https://wb1.uk"
+}

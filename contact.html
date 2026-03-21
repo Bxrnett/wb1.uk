@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Get a free consultation for your construction website with WB1. We're based in Staffordshire and serve builders, contractors, and construction companies.">
+    <meta name="keywords" content="construction website consultation, contact web designer Staffordshire, free website quote, builder website consultant">
+    <meta name="robots" content="index, follow">
+    <title>Contact - Get Your Construction Website Quote | WB1</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="canonical" href="https://wb1.uk/contact.html">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ContactPoint",
+      "contactType": "Customer Service",
+      "email": "hello@wb1.uk",
+      "availableLanguage": "en"
+    }
+    </script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <div class="logo-section">
+
+                <span class="brand-name">WB1</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html" class="active btn-primary">Get Started</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Get Your Construction Website Built</h1>
+            <p>Free consultation for construction companies in Staffordshire</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <div class="container contact-container">
+            <!-- Contact Info -->
+            <div class="contact-info">
+                <h2>Let's Connect</h2>
+                <p>Whether you're a builder, contractor, or construction company, we're here to help you build a website that generates leads and wins projects.</p>
+                
+                <div class="info-items">
+                    <div class="info-item">
+                        <h4>✉️ Email</h4>
+                        <p><a href="mailto:hello@wb1.uk">hello@wb1.uk</a></p>
+                    </div>
+                    <div class="info-item">
+                        <h4>🌐 Website</h4>
+                        <p><a href="https://wb1.uk" target="_blank">www.wb1.uk</a></p>
+                    </div>
+                    <div class="info-item">
+                        <h4>💬 Response Time</h4>
+                        <p>We typically respond within 24 hours</p>
+                    </div>
+                </div>
+
+                <div class="social-links" style="margin-top: 2rem; padding-top: 2rem; border-top: 2px solid var(--border-color);">
+                    <h4>📧 Website Tips & Updates</h4>
+                    <p style="font-size: 0.95rem; margin-bottom: 1rem;">Get fortnightly tips on web design, lead generation, and digital growth.</p>
+                    <form class="newsletter-form" onsubmit="handleNewsletterSignup(event)">
+                        <input type="email" placeholder="Your email" required>
+                        <button type="submit" class="btn btn-primary">Subscribe</button>
+                    </form>
+                </div>
+
+                <div class="social-links">
+                    <h4>Follow Us</h4>
+                    <div class="social-icons">
+                        <a href="#" class="social-link">LinkedIn</a>
+                        <a href="#" class="social-link">Twitter</a>
+                        <a href="#" class="social-link">Instagram</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Contact Form -->
+            <div class="contact-form-wrapper">
+                <h2>Get Your Free Consultation</h2>
+                <div class="form-progress">
+                    <div class="progress-dot active" onclick="goToStep(1)"></div>
+                    <div class="progress-dot" onclick="goToStep(2)"></div>
+                </div>
+
+                <form id="contactForm" class="contact-form">
+                    <!-- Step 1: Basic Info -->
+                    <div class="form-step active" id="step1">
+                        <h3 style="margin-bottom: 1.5rem;">Let's Get Started</h3>
+                        <div class="form-group">
+                            <label for="name">Your Name *</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+
+                        <button type="button" class="btn btn-primary btn-large" onclick="goToStep(2)" style="width: 100%;">Continue →</button>
+                    </div>
+
+                    <!-- Step 2: Project Details -->
+                    <div class="form-step" id="step2">
+                        <h3 style="margin-bottom: 1.5rem;">Tell Us About Your Project</h3>
+                        
+                        <div class="form-group">
+                            <label for="company">Company Name</label>
+                            <input type="text" id="company" name="company">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="service">Type of Construction Business *</label>
+                            <select id="service" name="service" required>
+                                <option value="">Select your business type</option>
+                                <option value="general-builder">General Builder</option>
+                                <option value="contractor">Specialist Contractor (Electrics, Plumbing, etc)</option>
+                                <option value="architect">Architect / Designer</option>
+                                <option value="property-developer">Property Developer</option>
+                                <option value="renovation">Renovation / Restoration Specialist</option>
+                                <option value="other">Other / Consultation</option>
+                            </select>
+                        </div>
+
+                    <div class="form-group">
+                        <label for="budget">Budget Range (GBP)</label>
+                        <select id="budget" name="budget">
+                            <option value="">Select budget range</option>
+                            <option value="under-2k">Under £2,000</option>
+                            <option value="2-4k">£2,000 - £4,000</option>
+                            <option value="4-7k">£4,000 - £7,000</option>
+                            <option value="7k-plus">£7,000+</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Tell us about your project *</label>
+                        <textarea id="message" name="message" rows="6" required></textarea>
+                    </div>
+
+                    <div class="form-group checkbox">
+                        <input type="checkbox" id="terms" name="terms" required>
+                        <label for="terms">I'd like to receive updates about WB1 services</label>
+                    </div>
+
+                    <div class="form-buttons">
+                        <button type="button" class="btn btn-back" onclick="goToStep(1)">← Back</button>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </div>
+                    </div>
+                </form>
+                <div id="formMessage" class="form-message" style="display: none;"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h4>⚡ How quickly can you build my website?</h4>
+                    <p>Most landing pages are completed within 7-10 working days. Full websites typically take 2-3 weeks. We also offer expedited delivery for time-sensitive projects.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>💰 How much does it cost?</h4>
+                    <p>Pricing varies based on scope. Landing pages start at competitive rates, and websites depend on your needs. We offer custom quotes after our free consultation. No hidden fees.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>🔄 Do you offer revisions?</h4>
+                    <p>Yes! We include revision rounds in all packages. We work with you until you're completely satisfied with the result.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>📝 Can you help with content?</h4>
+                    <p>Absolutely! We provide copywriting, AI-enhanced content creation, and conversion optimization. We ensure your messaging is clear, compelling, and conversion-focused.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>🛡️ What if I'm not happy with the work?</h4>
+                    <p>Your satisfaction is guaranteed. We provide unlimited revisions until you're happy. If we can't meet your needs, we'll work with you to find a solution.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>📊 Will my site get leads?</h4>
+                    <p>Our sites are built with lead generation in mind. We use proven conversion optimization techniques. On average, clients see a 2-3x increase in leads within the first 3 months.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>🔧 How do I update my site after launch?</h4>
+                    <p>We provide a simple CMS or documentation showing exactly how to make updates. Alternatively, we offer maintenance packages for ongoing management.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>🚀 What about SEO?</h4>
+                    <p>All sites built with SEO best practices: mobile optimization, fast loading, structured data, and keyword-optimized content. SEO-ready from day one.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>🤖 Do you include AI tools?</h4>
+                    <p>Our Professional and Agency packages include AI tool integration for chatbots, email automation, and content generation. Starter packages can add these as add-ons.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>💼 Do you work with construction companies?</h4>
+                    <p>Yes! We specialize in websites for builders, contractors, architects, property developers, and other construction businesses. We understand your industry and what your clients are looking for.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>❓ What if I have more questions?</h4>
+                    <p>Schedule your free 30-minute consultation above! No obligation. We'll discuss your needs, answer all questions, and give you a custom proposal.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>🎁 Is there a money-back guarantee?</h4>
+                    <p>We offer a 100% satisfaction guarantee. If you're unhappy with the final deliverable, we'll either refine it or discuss refund options.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>WB1</h4>
+                    <p>Lead generation and digital presence solutions</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Connect</h4>
+                    <ul>
+                        <li><a href="#">LinkedIn</a></li>
+                        <li><a href="#">Twitter</a></li>
+                        <li><a href="#">Email</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 WB1. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Sticky CTA Bar -->
+    <div class="sticky-cta" id="stickyCta">
+        <p>🎯 Get a FREE Website Audit & Consultation</p>
+        <a href="contact.html" class="btn btn-light">Schedule Now</a>
+        <button class="sticky-cta-close" onclick="closeStickyBar()">×</button>
+    </div>
+
+    <!-- Exit-Intent Popup Modal -->
+    <div class="modal-overlay" id="exitModal">
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeModal()">×</button>
+            <h2>Before You Leave</h2>
+            <p>Let's talk about your website project. Book a free 30-minute consultation with our team.</p>
+            <p style="font-size: 0.95rem; color: var(--text-light);">We'll discuss your goals, timeline, and provide a no-obligation quote.</p>
+            <a href="contact.html" class="btn btn-primary btn-large modal-cta-button">Book Consultation</a>
+            <button onclick="closeModal()" style="width: 100%; padding: 0.75rem; background: var(--bg-light); border: none; border-radius: 8px; color: var(--text-dark); cursor: pointer; font-weight: 600;">Skip For Now</button>
+        </div>
+    </div>
+
+    <script>
+        // Sticky CTA Bar - Close & Hide
+        function closeStickyBar() {
+            const ctaBar = document.getElementById('stickyCta');
+            ctaBar.style.display = 'none';
+            document.body.classList.remove('has-sticky-cta');
+            localStorage.setItem('ctaBarClosed', 'true');
+        }
+
+        // Initialize sticky CTA
+        if (localStorage.getItem('ctaBarClosed') !== 'true') {
+            document.body.classList.add('has-sticky-cta');
+        } else {
+            document.getElementById('stickyCta').style.display = 'none';
+        }
+
+        // Exit-Intent Popup
+        let modalShown = false;
+
+        document.addEventListener('mouseleave', function(e) {
+            if (e.clientY <= 0 && !modalShown) {
+                showExitModal();
+                modalShown = true;
+                localStorage.setItem('exitModalShown', 'true');
+            }
+        });
+
+        function showExitModal() {
+            document.getElementById('exitModal').classList.add('show');
+        }
+
+        function closeModal() {
+            document.getElementById('exitModal').classList.remove('show');
+            localStorage.setItem('exitModalLastShown', new Date().getTime());
+            modalShown = true;
+        }
+
+        // Don't show modal again for 24 hours if closed
+        window.addEventListener('load', function() {
+            const lastShown = localStorage.getItem('exitModalLastShown');
+            const now = new Date().getTime();
+            if (lastShown && (now - lastShown) < 24 * 60 * 60 * 1000) {
+                modalShown = true;
+            }
+        });
+
+        // 2-Step Form Functionality
+        function goToStep(step) {
+            document.querySelectorAll('.form-step').forEach(el => el.classList.remove('active'));
+            document.getElementById('step' + step).classList.add('active');
+            
+            document.querySelectorAll('.progress-dot').forEach((el, idx) => {
+                el.classList.toggle('active', idx + 1 === step);
+            });
+        }
+
+        // Handle newsletter signup
+        function handleNewsletterSignup(e) {
+            e.preventDefault();
+            alert('Thank you for subscribing! Check your email for our latest tips.');
+            e.target.reset();
+        }
+
+        // Reset CTA bar visibility daily
+        function resetDailyElements() {
+            const lastReset = localStorage.getItem('lastDailyReset');
+            const now = new Date().toDateString();
+            if (lastReset !== now) {
+                localStorage.removeItem('ctaBarClosed');
+                localStorage.removeItem('exitModalShown');
+                modalShown = false;
+                document.body.classList.add('has-sticky-cta');
+                document.getElementById('stickyCta').style.display = 'flex';
+                localStorage.setItem('lastDailyReset', now);
+            }
+        }
+
+        resetDailyElements();
+
+        // Contact form handler
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Collect form data
+            const formData = new FormData(this);
+            const data = {
+                name: formData.get('name'),
+                email: formData.get('email'),
+                company: formData.get('company'),
+                service: formData.get('service'),
+                budget: formData.get('budget'),
+                message: formData.get('message'),
+                subscribe: formData.get('terms') ? 'Yes' : 'No'
+            };
+
+            // Show success message
+            const messageDiv = document.getElementById('formMessage');
+            messageDiv.className = 'form-message success';
+            messageDiv.textContent = '✓ Message sent! We\'ll get back to you within 24 hours.';
+            messageDiv.style.display = 'block';
+
+            // Reset form
+            this.reset();
+            goToStep(1);
+
+            // Hide message after 5 seconds
+            setTimeout(() => {
+                messageDiv.style.display = 'none';
+            }, 5000);
+
+            console.log('Form data:', data);
+        });
+    </script>
+</body>
+</html>
