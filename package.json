@@ -14,8 +14,7 @@
   "license": "PROPRIETARY",
   "scripts": {
     "dev": "npx http-server -p 8080 -o",
-    "build": "echo 'Static site - no build needed'",
-    "deploy": "echo 'Static site deployed to Cloudflare Pages'"
+    "build": "echo 'Static site - no build needed'"
   },
   "repository": {
     "type": "git",

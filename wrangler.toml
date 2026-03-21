@@ -1,6 +1,0 @@
-name = "wb1"
-
-[site]
-bucket = "./"
-include = ["*.html", "*.css", "*.js", "*.png", "*.jpg", "*.jpeg", "*.gif", "*.svg", "*.ico", "*.json", "*.xml", "*.txt", "*.webp"]
-
