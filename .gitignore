@@ -2,6 +2,7 @@
 node_modules/
 package-lock.json
 yarn.lock
+bun.lockb
 
 # Environment files
 .env
@@ -11,7 +12,6 @@ yarn.lock
 # OS files
 .DS_Store
 Thumbs.db
-
 
 # Editor files
 .vscode/
@@ -27,3 +27,9 @@ build/
 # IDE
 *.sublime-project
 *.sublime-workspace
+
+# Wrangler/Cloudflare Workers
+.wrangler/
+wrangler-error.log
+wrangler.jsonc
+.wranglerignore

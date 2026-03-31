@@ -15,7 +15,11 @@
   "scripts": {
     "dev": "npx http-server -p 8080 -o",
     "build": "echo 'Static site - no build needed'",
-    "deploy": "exit 0"
+    "deploy": "wrangler deploy",
+    "preview": "wrangler dev"
+  },
+  "devDependencies": {
+    "wrangler": "^4.78.0"
   },
   "repository": {
     "type": "git",
